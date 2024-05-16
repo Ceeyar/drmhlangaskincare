@@ -1,0 +1,14 @@
+@import 'assets/styles/Styles.scss';
+
+.background-image-container {
+    background-image: url('../../assets/images/landing-pg-bg.png');
+    background-size: cover; 
+    background-position: center;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.text-parent {
+    padding: 10px 15px;
+    text-align: left;
+}

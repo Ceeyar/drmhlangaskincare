@@ -1,0 +1,11 @@
+@import 'assets/styles/Colors.scss';
+
+.header {
+    padding-top: 10px;
+    background-color: $black
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
