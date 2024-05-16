@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import { createStyles } from '@mui/material';
-import { ProudMember, Typography } from 'components/Index';
+import { ProudMember, Typography, Testimonies } from 'components/Index';
 
 export default function Home() {
 
@@ -20,13 +20,15 @@ export default function Home() {
         <div className='container'>
             <div className='background-image-container'>
                 <div className='text-parent'>
-                    <Typography varient="h6" style={welcome} copy={"WELCOME TO MHLANGA SKINCARE"} />
-                    <Typography varient="h3" style={highlight} copy={"Your Healthy"} />
-                    <Typography varient="h3" style={highlight} copy={"Skin Journey"} />
-                    <Typography varient="h3" color={"white"} style={highlight} copy={"Begins Here"} />
+                    <Typography variant="h6" style={welcome} copy={"WELCOME TO DR MHLANGA SKINCARE"} />
+                    <Typography variant="h3" style={highlight} copy={"Your Healthy"} />
+                    <Typography variant="h3" style={highlight} copy={"Skin Journey"} />
+                    <Typography variant="h3" color={"white"} style={highlight} copy={"Begins Here"} />
                 </div>
             </div>
             <ProudMember />
+            <Testimonies />
+
         </div>
 
     )

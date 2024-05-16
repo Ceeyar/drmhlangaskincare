@@ -1,0 +1,39 @@
+@import './Colors.scss';
+
+.container {
+    padding: 40px;
+}
+
+.grid-center {
+    display: grid;
+    justify-content: center;
+}
+
+.text-align-left {
+    text-align: left;
+    color: $white
+}
+
+.slider-container {
+    padding: 20px;
+}
+
+/* Custom styles for carousel arrows */
+.slick-prev:before, .slick-next:before {
+  color: $peach !important;  
+}
+
+.testimony {
+    color: $white;
+    background-color: $peach;
+    height: 155px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    background-color: $black;
+}

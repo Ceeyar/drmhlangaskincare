@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import { Box } from '@mui/material';
 import Tabs from '@mui/material/Tabs';
 import { useNavigate } from 'react-router-dom';
-import { menuItems } from 'constants/Index';
+import { MENU_ITEMS } from 'constants/Index';
 import { a11yProps } from 'utils/Functions';
 import LOGO from '../../assets/images/logo.png';
 import { createTheme, ThemeProvider, createStyles } from '@mui/material/styles';
@@ -50,7 +50,7 @@ export default function Header() {
 
                         <Tabs value={value} centered onChange={handleChange} aria-label="home tabs" >
                             {
-                                menuItems.map(item => <Tab onClick={() => navigate(item.route)} sx={menuItemStyle} label={item.name} {...a11yProps(item.id)} key={item.id} />)
+                                MENU_ITEMS.map(item => <Tab onClick={() => navigate(item.route)} sx={menuItemStyle} label={item.name} {...a11yProps(item.id)} key={item.id} />)
                             }
                         </Tabs>
                     </Box>

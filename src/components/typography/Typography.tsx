@@ -5,14 +5,18 @@ import React, { CSSProperties, FC } from 'react'
 
 interface TypographyProps {
     copy: String,
-    varient: Variant,
+    align?: "left" | "center" | "right" | "inherit" | "justify" | undefined,
+    variant: Variant,
     color?: any,
+    size?: number,
     style?: CSSProperties
 }
 
-const Typography: FC<TypographyProps> = ({ copy, color, varient, style }) => {
+const Typography: FC<TypographyProps> = ({ copy, size, align, color, variant, style }) => {
     return (
-        <MUITypography color={color} variant={varient} style={style}>
+        <MUITypography
+            align={align}
+            color={color} variant={variant} style={style}>
             {copy}
         </MUITypography>
     )
