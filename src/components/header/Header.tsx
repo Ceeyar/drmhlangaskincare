@@ -1,5 +1,5 @@
 import './Header.scss';
-import * as React from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 import 'assets/styles/Colors.scss';
 import Tab from '@mui/material/Tab';
 import { Box } from '@mui/material';
@@ -28,10 +28,10 @@ const menuItemStyle = createStyles({
 
 export default function Header() {
 
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
     const navigate = useNavigate();
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (event: SyntheticEvent, newValue: number) => {
         console.log(newValue)
         setValue(newValue);
     };
@@ -59,3 +59,4 @@ export default function Header() {
         </ThemeProvider>
     );
 }
+
