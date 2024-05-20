@@ -1,7 +1,7 @@
 
-import { Color, Typography as MUITypography } from '@mui/material';
+import { Typography as MUITypography } from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
-import React, { CSSProperties, FC } from 'react'
+import { CSSProperties, FC } from 'react'
 
 interface TypographyProps {
     copy: String,

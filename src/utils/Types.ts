@@ -4,3 +4,5 @@ export interface TabPanelProps {
     index: number;
     value: number;
 }
+
+export type IconName = 'AssuredWorkloadIcon' | 'FoundationIcon' | 'SchoolIcon';

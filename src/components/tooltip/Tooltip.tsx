@@ -17,12 +17,11 @@ const TooltipTypography: FC<TooltipTypographyProps> = ({
     return (
         <>
             <MUITooltip
-                title={
-                    <Fragment>
-                        {additionalTextLines.map((line: String) => (
-                            <Typography>{line}</Typography>
-                        ))}
-                    </Fragment>
+                title={<Fragment>
+                    {
+                        additionalTextLines.map((line: String) => (<Typography>{line}</Typography>))
+                    }
+                </Fragment>
                 }
                 componentsProps={{
                     tooltip: {
