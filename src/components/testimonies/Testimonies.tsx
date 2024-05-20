@@ -9,12 +9,13 @@ const Carousel = () => {
         dots: true,
         infinite: true,
         centerMode: true,
+        adaptiveHeight: true,
         variableWidth: true,
         arrows: true,
         className: 'slider-container',
         autoplay: true,
         autoplaySpeed: 4000,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
     };
     const title = createStyles({
