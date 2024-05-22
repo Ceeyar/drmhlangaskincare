@@ -7,6 +7,7 @@ export { default as Testimonies } from './testimonies/Testimonies';
 export { default as Timeline } from './timeline/Timeline';
 export { default as Tooltip } from './tooltip/Tooltip';
 export { default as Banner } from './banner/Banner';
+export { default as Media } from './media/Media';
 
 
 

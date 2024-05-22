@@ -1,4 +1,8 @@
 import { IconName } from "utils/Types";
+import dermatology from "assets/images/adult-medicaldermatology.png"
+import paediatric from "assets/images/paediatric-medical-dermatology.png"
+import surgical from "assets/images/surgical-dermatology.png"
+import conditions from "assets/images/skin-conditions-treated.png"
 
 export const MENU_ITEMS = [
 
@@ -114,4 +118,31 @@ export const TIMELINE_ITEMS = [
         icon: "SchoolIcon" as IconName,
         isWork: false
     },
+]
+
+export const TREAMENT_AND_SERVICES = [
+    {
+        id: 0,
+        logo: dermatology,
+        name: "Adult Medical Dermatology (Male & female)",
+        treatment: "Dedicated to providing personalized solutions that enhance and maintain the health and appearance of your skin throughout adulthood."
+    },
+    {
+        id: 1,
+        logo: paediatric,
+        name: "Paediatric Medical Dermatology",
+        treatment: " Treating a wide range of pediatric skin conditions, ensuring the health and well-being of your child's skin."
+    },
+    {
+        id: 2,
+        logo: surgical,
+        name: "Surgical Dermatology",
+        treatment: "Skin biopsies Electrocautery & cryotherapy Removal of skin tags, cysts benign growths & warts"
+    },
+    {
+        id: 3,
+        logo: conditions,
+        name: "Common skin conditions treated",
+        treatment: "Including the following; Hair loss, Vitiligo, Rosacea, Eczema, Psoriasis, Skin pigmentation, Warts, Keloids, Acne"
+    }
 ]
