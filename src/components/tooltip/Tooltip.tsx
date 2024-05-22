@@ -19,7 +19,7 @@ const TooltipTypography: FC<TooltipTypographyProps> = ({
             <MUITooltip
                 title={<Fragment>
                     {
-                        additionalTextLines.map((line: String) => (<Typography>{line}</Typography>))
+                        additionalTextLines.map((line: String, index: number) => (<Typography key={index}>{line}</Typography>))
                     }
                 </Fragment>
                 }

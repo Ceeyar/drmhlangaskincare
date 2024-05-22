@@ -22,8 +22,8 @@ export default function MyTimeline() {
     return (
         <Timeline position="alternate">
             {
-                TIMELINE_ITEMS.map(item =>
-                    <TimelineItem>
+                TIMELINE_ITEMS.map((item, index) =>
+                    <TimelineItem key={index}>
                         <TimelineOppositeContent
                             sx={{ m: 'auto 0' }}
                             align="right"

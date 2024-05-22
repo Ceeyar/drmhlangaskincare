@@ -27,21 +27,27 @@ const Banner: React.FC<BannerProps> = ({
     textCopy,
     textStyle
 }) => {
+    const titleLines = titleCopy.split(';');
     const textLines = textCopy.split(';');
+
     return (
         <div className={parentClass}>
             <div className={textContainerClass}>
-                <Typography color={titleColor} variant={titleVarient} style={titleStyle} copy={titleCopy} />
                 {
-                    textLines.map((line, index) => (
-                        <Typography
-                            key={index}
-                            color={textColor}
-                            variant={textVarient}
-                            style={textStyle}
-                            copy={line.trim()}
-                        />
-                    ))
+                    [
+                        titleLines.map((line, index) => (
+                            <Typography key={index} color={titleColor} variant={titleVarient} style={titleStyle} copy={line} />
+                        )),
+                        textLines.map((line, index) => (
+                            <Typography
+                                key={index}
+                                color={textColor}
+                                variant={textVarient}
+                                style={textStyle}
+                                copy={line.trim()}
+                            />
+                        ))
+                    ]
                 }
             </div>
         </div>

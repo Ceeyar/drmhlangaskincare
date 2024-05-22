@@ -32,7 +32,6 @@ export default function Header() {
     const navigate = useNavigate();
 
     const handleChange = (event: SyntheticEvent, newValue: number) => {
-        console.log(newValue)
         setValue(newValue);
     };
 
