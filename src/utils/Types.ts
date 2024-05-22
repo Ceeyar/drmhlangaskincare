@@ -4,3 +4,11 @@ export interface TabPanelProps {
     index: number;
     value: number;
 }
+
+export type IconName = 'AssuredWorkloadIcon' | 'FoundationIcon' | 'SchoolIcon';
+
+export interface MediaCardProps {
+    logo: string,
+    name: string,
+    treatment: string
+}

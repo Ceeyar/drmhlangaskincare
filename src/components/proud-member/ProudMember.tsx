@@ -10,7 +10,7 @@ export default function ProudMember() {
     })
     return (
 
-        <div className='container-short'>
+        <div className='container-short grid-center'>
             <Typography variant="h4" style={fontStyle} copy={"proud member of"} />
             <ImageList />
         </div>

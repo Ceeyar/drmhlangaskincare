@@ -1,3 +1,9 @@
+import { IconName } from "utils/Types";
+import dermatology from "assets/images/adult-medicaldermatology.png"
+import paediatric from "assets/images/paediatric-medical-dermatology.png"
+import surgical from "assets/images/surgical-dermatology.png"
+import conditions from "assets/images/skin-conditions-treated.png"
+
 export const MENU_ITEMS = [
 
     {
@@ -54,3 +60,89 @@ export const TESTMONIES = [
         testimony: `I can't thank Mhlanga Skincare enough for transforming my skin! I struggled with persistent acne for years, and after trying various treatments with little success, I decided to consult Dr. Mhlanga. His personalized approach and expertise made all the difference. Now, my skin is clearer than ever, and I feel so much more confident.`,
     },
 ];
+
+export const TIMELINE_ITEMS = [
+    {
+        institution: "Ngwelezane Tertiary Hospital",
+        duration: "2023",
+        position: "Dermatologist",
+        additionalText: "He is passionate about education and community development, roles that he plays as one of the skin specialists serving the King Cetshwayo District at Ngwelezane Tertiary Hospital, and an honorary lecturer at the University of KwaZulu-Natal.",
+        icon: "AssuredWorkloadIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2018 - 2023",
+        institution: "Stanger hospital",
+        position: "Medical Officer",
+        additionalText: "",
+        icon: "AssuredWorkloadIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2017",
+        institution: "A minute with Dr Mhlanga",
+        position: "Managing Director",
+        additionalText: "A minute with Dr Mhlanga: is a leadership consulting and motivational company.",
+        icon: "FoundationIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2016 - 2017",
+        institution: "uMphumulo Hospital",
+        position: "Community Medical Officer",
+        additionalText: "",
+        icon: "AssuredWorkloadIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2015",
+        institution: "Stanger (GJGM) Hospital",
+        position: "Medical Intern",
+        additionalText: "Served his residency in the KwaZulu-Natal from Stanger (GJGM) Hospital, Addington Hospital, Inkosi Albert Luthuli Central Hospital, and King Edward VIII Hospital.",
+        icon: "AssuredWorkloadIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2011",
+        institution: "Maximum OutPut Foundation",
+        position: "Founder",
+        additionalText: "A registered NPO, established in 2011. Aimed at raising and developing leaders who will redress the socio-economic issues of our country and beyond. A. Leadership seminars B. Career expo C. Mentorship to young leaders.",
+        icon: "FoundationIcon" as IconName,
+        isWork: true
+    },
+    {
+        duration: "2008 - 2014",
+        institution: "University of Cape Town",
+        position: "Bachelor of Medicine, Bachelor of Surgery - MBBS, Health Services/Allied Health/Health Sciences, General",
+        additionalText: "Dr Mhlanga graduated from the University of Cape Town with a Bachelor of Medicine and a Bachelor of Surgery in 2014.",
+        icon: "SchoolIcon" as IconName,
+        isWork: false
+    },
+]
+
+export const TREAMENT_AND_SERVICES = [
+    {
+        id: 0,
+        logo: dermatology,
+        name: "Adult Medical Dermatology (Male & female)",
+        treatment: "Dedicated to providing personalized solutions that enhance and maintain the health and appearance of your skin throughout adulthood."
+    },
+    {
+        id: 1,
+        logo: paediatric,
+        name: "Paediatric Medical Dermatology",
+        treatment: " Treating a wide range of pediatric skin conditions, ensuring the health and well-being of your child's skin."
+    },
+    {
+        id: 2,
+        logo: surgical,
+        name: "Surgical Dermatology",
+        treatment: "Skin biopsies Electrocautery & cryotherapy Removal of skin tags, cysts benign growths & warts"
+    },
+    {
+        id: 3,
+        logo: conditions,
+        name: "Common skin conditions treated",
+        treatment: "Including the following; Hair loss, Vitiligo, Rosacea, Eczema, Psoriasis, Skin pigmentation, Warts, Keloids, Acne"
+    }
+]

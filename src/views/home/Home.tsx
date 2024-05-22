@@ -21,8 +21,8 @@ export default function Home() {
             <div className='background-image-container'>
                 <div className='text-parent'>
                     <Typography variant="h6" style={welcome} copy={"WELCOME TO DR MHLANGA SKINCARE"} />
-                    <Typography variant="h3" style={highlight} copy={"Your Healthy"} />
-                    <Typography variant="h3" style={highlight} copy={"Skin Journey"} />
+                    <Typography variant="h3" color={"white"} style={highlight} copy={"Your Healthy"} />
+                    <Typography variant="h3" color={"white"} style={highlight} copy={"Skin Journey"} />
                     <Typography variant="h3" color={"white"} style={highlight} copy={"Begins Here"} />
                 </div>
             </div>
