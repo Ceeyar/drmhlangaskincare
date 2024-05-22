@@ -29,8 +29,8 @@ const MediaCard: FC<componentProps> = ({ item }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button color='primary' size="small">Share</Button>
-                <Button color='primary' size="small">Learn More</Button>
+                <Button style={{ color: '#f2b07e' }} size="small">Share</Button>
+                <Button style={{ color: '#f2b07e' }} size="small">Learn More</Button>
             </CardActions>
         </Card>
     );
