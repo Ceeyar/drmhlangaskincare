@@ -6,6 +6,7 @@ export { default as ImageList } from './image-list/ImageList';
 export { default as Testimonies } from './testimonies/Testimonies';
 export { default as Timeline } from './timeline/Timeline';
 export { default as Tooltip } from './tooltip/Tooltip';
+export { default as Banner } from './banner/Banner';
 
 
 

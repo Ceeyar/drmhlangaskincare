@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss';
-import { Timeline, Typography } from 'components/Index';
+import { Banner, Timeline, Typography } from 'components/Index';
 import { Box, createStyles } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -26,14 +26,17 @@ export default function About() {
     return (
 
         <div className='container'>
-            <div className='background-image-about-container'>
-                <div className='text-parent'>
-                    <Typography color={"white"} variant="h3" style={highlight} copy={"Dr. T.S Mhlanga"} />
-                    <Typography color={"white"} variant="h6" style={about} copy={"Specialist Dermatologist"} />
-                    <Typography color={"white"} variant="h6" style={about} copy={"FCDerm (SA) Mmed (UKZN) MBChB (UCT)"} />
-                    <Typography color={"white"} variant="h6" style={about} copy={`Life Coach & Inspirational Speaker.`} />
-                </div>
-            </div>
+            <Banner
+                parentClass={"background-image-about-container"}
+                textContainerClass={"text-parent"}
+                textCopy={"Specialist Dermatologist;FCDerm (SA) Mmed (UKZN) MBChB (UCT);Life Coach & Inspirational Speaker."}
+                titleColor={"white"}
+                titleCopy={"Dr. T.S Mhlanga"}
+                titleVarient={"h3"}
+                titleStyle={highlight}
+                textColor={"white"}
+                textStyle={about}
+                textVarient={"h6"} />
             <Box py={2}>
                 <Typography variant="caption" style={about} copy={`Dr. Sthembiso Mhlanga is a qualified Specialist dermatologist and Director of Mhlanga Skincare Inc. a dermatology clinic established in 2023.`} />
             </Box>
