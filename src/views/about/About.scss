@@ -1,0 +1,25 @@
+@import 'assets/styles/Styles.scss';
+
+.background-image-about-container {
+    background-image: url('../../assets/images/landing-pg-bg.png');
+    background-size: cover; 
+    background-position: center;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.text-parent {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: $primary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
