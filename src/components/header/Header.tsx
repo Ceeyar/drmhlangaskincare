@@ -40,7 +40,10 @@ export default function Header() {
             <Box sx={{ width: '100%' }}>
                 <div className='header'>
                     <img
-                        onClick={() => navigate("/")}
+                        onClick={() => {
+                            setValue(0)
+                            navigate("/")
+                        }}
                         src={LOGO}
                         alt="LOGO"
                         className='logo'
