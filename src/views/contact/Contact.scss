@@ -1,0 +1,9 @@
+@import 'assets/styles/Styles.scss';
+
+.background-image-contact-container {
+    background-image: url('../../assets/images/contact-pg-bg.jpeg');
+    background-size: cover; 
+    background-position: center;
+    height: 400px;
+    border-radius: 20px;
+}

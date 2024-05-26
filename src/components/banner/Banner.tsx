@@ -36,7 +36,7 @@ const Banner: React.FC<BannerProps> = ({
                 {
                     [
                         titleLines.map((line, index) => (
-                            <Typography key={index} color={titleColor} variant={titleVarient} style={titleStyle} copy={line} />
+                            <Typography key={index} color={titleColor} variant={titleVarient} style={{ paddingTop: "20px", paddingLeft: "20px", ...titleStyle }} copy={line} />
                         )),
                         textLines.map((line, index) => (
                             <Typography
